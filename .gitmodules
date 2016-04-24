@@ -1,0 +1,3 @@
+[submodule "versilis"]
+	path = versilis
+	url = git@github.com:versidyne/versilis.git
