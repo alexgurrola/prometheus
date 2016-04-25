@@ -5,9 +5,9 @@ MAIN=src
 VERSILIS=versilis
 
 # File Locations
-SOURCES=$(MAIN)/main.o $(VERSILIS)/common.o $(VERSILIS)/cpu.o 
-        #$(VERSILIS)/emotion.o $(VERSILIS)/error.o $(VERSILIS)/http.o \
-        #$(VERSILIS)/json.o $(VERSILIS)/netsock.o $(VERSILIS)/text.o
+SOURCES=$(MAIN)/main.o $(VERSILIS)/common.o $(VERSILIS)/cpu.o \
+        $(VERSILIS)/emotion.o $(VERSILIS)/error.o $(VERSILIS)/http.o \
+        $(VERSILIS)/json.o $(VERSILIS)/netsock.o $(VERSILIS)/text.o
 
 # Detect OS
 UNAME := $(shell uname)
@@ -49,7 +49,7 @@ endif
 all: $(SOURCES) link
 
 clean:
-	-rm bin/main src/*/*.o
+	-rm bin/main src/*.o versilis/*.o
 
 link:
 	$(LD) $(LDFLAGS) -o bin/main $(SOURCES)

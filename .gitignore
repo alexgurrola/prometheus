@@ -30,3 +30,5 @@
 # JetBrains
 .idea
 .idea/*
+*/.idea
+*/.idea/*
