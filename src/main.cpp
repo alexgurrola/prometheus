@@ -11,7 +11,7 @@ int main() {
     char testCharacters[] = {"testing"};
 
     cout << 'Bool: ' << JSON->stringify(true) << endl;
-    cout << 'Int: ' << JSON->stringify(2) << endl;
+    //cout << 'Int: ' << JSON->stringify(2) << endl;
     //cout << 'Double: ' << JSON->stringify(1.5) << endl;
     cout << 'String: ' << JSON->stringify(testCharacters) << endl;
 
