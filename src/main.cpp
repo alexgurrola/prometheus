@@ -8,12 +8,18 @@ int main() {
 
     // JSON Test
     json *JSON = new json();
-    char testCharacters[] = {"testing"};
 
-    cout << 'Bool: ' << JSON->stringify(true) << endl;
-    //cout << 'Int: ' << JSON->stringify(2) << endl;
-    //cout << 'Double: ' << JSON->stringify(1.5) << endl;
-    cout << 'String: ' << JSON->stringify(testCharacters) << endl;
+    bool boolean = true;
+    int integer = 9;
+    long double pi = 3.14159265359;
+    char characters[] = {"testing"};
+
+    cout << endl;
+    cout << "Bool: " << JSON->stringify(boolean) << endl;
+    cout << "Int: " << JSON->stringify(integer) << endl;
+    cout << "Double: " << JSON->stringify(pi) << endl;
+    cout << "String: " << JSON->stringify(characters) << endl;
+    cout << endl;
 
     // CPU Test
     cpu();
